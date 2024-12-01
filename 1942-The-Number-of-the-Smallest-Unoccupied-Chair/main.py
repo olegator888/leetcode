@@ -18,6 +18,6 @@ class Solution:
                 heapq.heappush(chairs_heap, heapq.heappop(leave_heap)[1])
 
             if times[i][2] == targetFriend:
-                return heapq.heappop(chairs_heap)    
+                return heapq.heappop(chairs_heap)
 
-            heapq.heappush(leave_heap, (times[i][1], heapq.heappop(chairs_heap)))    
+            heapq.heappush(leave_heap, (times[i][1], heapq.heappop(chairs_heap)))

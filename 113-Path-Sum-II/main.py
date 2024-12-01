@@ -25,13 +25,13 @@ class Solution:
             if not node.left and not node.right:
                 if curSum == targetSum:
                     res.append(path.copy())
-                path.pop()    
-                return    
-            
+                path.pop()
+                return
+
             dfs(node.left, curSum)
             dfs(node.right, curSum)
             path.pop()
 
-        dfs(root, 0)    
+        dfs(root, 0)
 
         return res
