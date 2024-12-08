@@ -4,7 +4,7 @@
  * @return {string}
  */
 var addSpaces = function (s, spaces) {
-  const spaces = new Set(spaces);
+  spaces = new Set(spaces);
   const res = [];
 
   for (let i = 0; i < s.length; i++) {
