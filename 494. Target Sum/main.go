@@ -1,3 +1,7 @@
+package main
+
+import "fmt"
+
 func findTargetSumWays(nums []int, target int) int {
 	cache := make(map[string]int)
 
